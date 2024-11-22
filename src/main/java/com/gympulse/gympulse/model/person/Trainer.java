@@ -18,4 +18,8 @@ public class Trainer {
     private String speciality;
     private Double salary;
     private String certificationNumber;
+
+    // Constructor for creating a trainer with all fields
+    public Trainer(String trainerId, String speciality, Double salary, String certificationNumber,
+                   )
 }
