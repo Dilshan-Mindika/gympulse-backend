@@ -54,4 +54,14 @@ public class TrainerServiceImpl implements TrainerService{
             throw new NoSuchElementException("Trainer not found for ID: " + trainerId);
         }
     }
+
+    @Override
+    public void deleteByTrainerId(String trainerId) {
+        Optional<Trainer> trainer = trainerRepository.findByTrainerId(trainerId);
+        if (trainer.isPresent()) {
+            trainerRepository.delete(trainer.get());
+        } else {
+            throw new NoSuchElementException("Trainer not found for ID: " + trainerId);
+        }
+    }
 }
