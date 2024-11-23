@@ -6,6 +6,8 @@ import com.gympulse.gympulse.repositories.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 public class MemberServiceImpl implements MemberService {
     private GymLogger logger = GymLogger.getInstance();
@@ -29,4 +31,13 @@ public class MemberServiceImpl implements MemberService {
             throw new IllegalStateException("Member limit reached. Connot creat more members.")
         }
     }
+
+    @Override
+    public List <Member> allMembers(){
+        //Retrieve all members from the repository
+        return memberRepository.findAll();
+    }
+
+    @Override
+    public Optional<Member> memberById
 }
