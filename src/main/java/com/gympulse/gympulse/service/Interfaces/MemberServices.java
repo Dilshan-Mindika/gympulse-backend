@@ -20,8 +20,19 @@ public interface MemberServices {
      */
     Member createMember(String fullName, String email, String address, String phoneNumber,
                         String memberShipType, String startDate, String endDate, String workoutPlan);
+    /**
+     * Retrieves all members.
+     *
+     * @return a list of all Members
+     */
 
     List<Member> allMembers();
+    /**
+     * Finds a member by their ID.
+     *
+     * @param memberId the ID of the member
+     * @return an Optional containing the Member if found, or empty if not
+     */
 
     Optional<Member> findMemberById(String memberId);
 
