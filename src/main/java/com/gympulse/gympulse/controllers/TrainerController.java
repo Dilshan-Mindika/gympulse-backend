@@ -46,4 +46,10 @@ public class TrainerController {
     public Trainer updateTrainer(@PathVariable String trainerId, @RequestBody TrainerRequest trainerRequest) {
         return trainerService.updateTrainer(trainerId, trainerRequest);
     }
+
+    @DeleteMapping("/{trainerId}")
+    public ResponseEntity<Void> deleteTrainer(@PathVariable String trainerId) {
+        trainerService.deleteByTrainerId(trainerId);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
 }
