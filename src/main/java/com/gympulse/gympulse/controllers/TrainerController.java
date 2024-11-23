@@ -20,7 +20,7 @@ public class TrainerController {
 
     @GetMapping
     public ResponseEntity<List<Trainer>> getAllTrainers() {
-        return new ResponseEntity<List<Trainer>>(trainerService.allTrainers(), HttpStatus.OK)
+        return new ResponseEntity<List<Trainer>>(trainerService.allTrainers(), HttpStatus.OK);
     }
 
     @PostMapping

@@ -11,7 +11,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @NoArgsConstructor
-AllArgsConstructor
+@AllArgsConstructor
 public class Trainer extends Person {
     @Id
     private String trainerId;
@@ -30,7 +30,7 @@ public class Trainer extends Person {
     }
 
     // Constructor for creating a trainer without specifying trainer ID
-    public Trainer(String trainerId, String speciality, Double salary, String certificationNumber,
+    public Trainer(String speciality, Double salary, String certificationNumber,
                    String fullName, String phoneNumber, String address, String email) {
         super(fullName, email, address, phoneNumber);
         this.certificationNumber = certificationNumber;

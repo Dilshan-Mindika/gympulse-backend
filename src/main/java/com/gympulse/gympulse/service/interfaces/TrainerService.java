@@ -22,8 +22,8 @@ public interface TrainerService {
      * @param email the email of the trainer
      * @return the created Trainer
      */
-    Trainer createTrainer(String trainerId, String speciality, Double salary, String certificationNumber,
-                          String fullName, String phoneNumber, String address, String email);
+    Trainer createTrainer(String speciality, Double salary, String certificationNumber, String fullName,
+                          String phoneNumber, String address, String email);
 
     /**
      * Retrieves all trainers.
