@@ -35,7 +35,7 @@ public interface TrainerService {
      * Find a trainer by their ID
      *
      * @param trainerId the ID of the trainer
-     * @return an Optoional containing the Trainer if found, or empty if not
+     * @return an Optional containing the Trainer if found, or empty if not
      */
     Optional<Trainer> trainerById(String trainerId);
 

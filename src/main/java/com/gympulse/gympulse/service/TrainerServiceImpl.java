@@ -5,6 +5,7 @@ import com.gympulse.gympulse.repositories.TrainerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.Optional;
 
 public class TrainerServiceImpl implements TrainerService{
@@ -32,7 +33,25 @@ public class TrainerServiceImpl implements TrainerService{
     }
 
     @Override
-    public Optional<Trainer> trainerById(String traineId) {
-        return trainerRepository.findByTrainerID(traineId);
+    public Optional<Trainer> trainerById(String trainerId) {
+        return trainerRepository.findByTrainerId(trainerId);
+    }
+
+    @Override
+    public Trainer updateTrainer(String trainerId, TrainerRequest trainerRequest) {
+        Optional<Trainer> optionalTrainer =trainerRepository.findByTrainerId(trainerId);
+        if (optionalTrainer.isPresent()) {
+            Trainer trainer = optionalTrainer.get();
+            trainer.setSpeciality(trainerRequest.getSpeciality());
+            trainer.setSalary(trainerRequest.getSalary());
+            trainer.setCertificationNumber(trainerRequest.getCertificationNumber());
+            trainer.setFullName(trainerRequest.getFullName());
+            trainer.setPhoneNumber(trainerRequest.getPhoneNumber());
+            trainer.setAddress(trainerRequest.getAddress());
+            trainer.setEmail(trainerRequest.getEmail());
+            return trainerRepository.save(trainer);
+        } else {
+            throw new NoSuchElementException("Trainer not found for ID: " + trainerId);
+        }
     }
 }
