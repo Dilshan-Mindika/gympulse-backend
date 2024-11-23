@@ -5,6 +5,7 @@ import com.gympulse.gympulse.repositories.TrainerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
+import java.util.Optional;
 
 public class TrainerServiceImpl implements TrainerService{
 
@@ -28,5 +29,10 @@ public class TrainerServiceImpl implements TrainerService{
     @Override
     public List<Trainer> allTrainers(){
         return trainerRepository.findAll()
+    }
+
+    @Override
+    public Optional<Trainer> trainerById(String traineId) {
+        return trainerRepository.findByTrainerID(traineId);
     }
 }
