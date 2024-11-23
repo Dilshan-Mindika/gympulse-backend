@@ -1,6 +1,7 @@
-package com.gympulse.gympulse.service;
+package com.gympulse.gympulse.service.interfaces;
 
 import com.gympulse.gympulse.model.person.Trainer;
+import com.gympulse.gympulse.requests.TrainerRequest;
 
 import java.util.List;
 import java.util.Optional;

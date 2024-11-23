@@ -1,7 +1,9 @@
-package com.gympulse.gympulse.service;
+package com.gympulse.gympulse.service.implementations;
 
 import com.gympulse.gympulse.model.person.Trainer;
 import com.gympulse.gympulse.repositories.TrainerRepository;
+import com.gympulse.gympulse.requests.TrainerRequest;
+import com.gympulse.gympulse.service.interfaces.TrainerService;
 import com.gympulse.gympulse.utils.GymLogger;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +16,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 @Service
-public class TrainerServiceImpl implements TrainerService{
+public class TrainerServiceImpl implements TrainerService {
 
     private GymLogger logger = GymLogger.getInstance();
 
@@ -22,8 +24,8 @@ public class TrainerServiceImpl implements TrainerService{
     private TrainerRepository trainerRepository;
 
     @Override
-    public Trainer createTrainer(String speciality, Double salary, String certificationNumber,
-                                            String fullName, String phoneNumber, String address, String email){
+    public Trainer createTrainer(String speciality, Double salary, String certificationNumber, String fullName,
+                                 String phoneNumber, String address, String email) {
         // Generates a unique trainer ID
         String trainerId = generateNextTrainerId();
         if (trainerId != null) {
