@@ -4,10 +4,15 @@ import com.gympulse.gympulse.model.person.Trainer;
 import com.gympulse.gympulse.repositories.TrainerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.List;
+
 public class TrainerServiceImpl implements TrainerService{
 
     @Autowired
-    private TrainerRepository createTrainer(String trainerId, String speciality, Double salary, String certificationNumber,
+    private TrainerRepository trainerRepository;
+
+    @Override
+    public Trainer createTrainer(String trainerId, String speciality, Double salary, String certificationNumber,
                                             String fullName, String phoneNumber, String address, String email){
         // Generates a unique trainer ID
         String trainerId = generateNextTrainerId();
@@ -19,5 +24,9 @@ public class TrainerServiceImpl implements TrainerService{
             throw new IllegalStateException("Trainer limit reached. Cannot create more trainers.");
         }
     }
-    
+
+    @Override
+    public List<Trainer> allTrainers(){
+        return trainerRepository.findAll()
+    }
 }
