@@ -41,4 +41,9 @@ public class TrainerController {
     public ResponseEntity<Optional<Trainer>> getTrainerById(@PathVariable String trainerId) {
         return new ResponseEntity<Optional<Trainer>>(trainerService.trainerById(trainerId), HttpStatus.OK);
     }
+
+    @PutMapping("/{trainerId}")
+    public Trainer updateTrainer(@PathVariable String trainerId, @RequestBody TrainerRequest trainerRequest) {
+        return trainerService.updateTrainer(trainerId, trainerRequest);
+    }
 }
