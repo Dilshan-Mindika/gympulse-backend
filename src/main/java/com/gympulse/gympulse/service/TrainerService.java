@@ -38,4 +38,21 @@ public interface TrainerService {
      * @return an Optoional containing the Trainer if found, or empty if not
      */
     Optional<Trainer> trainerById(String trainerId);
+
+    /**
+     * Updates an existing trainer's information.
+     *
+     * @param trainerId
+     * @param trainerRequest
+     * @return the updated Trainer
+     */
+    Trainer updateTrainer(String trainerId, TrainerRequest trainerRequest);
+
+    /**
+     * Delete a trainer by their ID
+     *
+     * @param trainerID of the trainer to delete
+     *
+     */
+    void deleteByTrainerId(String trainerID)
 }
