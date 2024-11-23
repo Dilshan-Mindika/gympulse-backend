@@ -9,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/Trainers")
@@ -34,5 +35,10 @@ public class TrainerController {
 
         return trainerService.createTrainer(speciality, salary, certificationNumber, fullName,
                 phoneNumber, address, email);
+    }
+
+    @GetMapping("/{trainerId)")
+    public ResponseEntity<Optional<Trainer>> getTrainerById(@PathVariable String trainerId) {
+        return new ResponseEntity<Optional<Trainer>>(trainerService.trainerById(trainerId), HttpStatus.OK);
     }
 }
