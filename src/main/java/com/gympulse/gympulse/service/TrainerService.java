@@ -13,12 +13,12 @@ public interface TrainerService {
     /**
      * Create a new Trainer
      *
-     * @param speciality
-     * @param salary
-     * @param certificationNumber
-     * @param fullName
-     * @param address
-     * @param email
+     * @param speciality the speciality of the trainer
+     * @param salary the salary of the trainer
+     * @param certificationNumber the certification number of the trainer
+     * @param fullName the full name of the trainer
+     * @param address the address of the trainer
+     * @param email the email of the trainer
      * @return the created Trainer
      */
     Trainer createTrainer(String trainerId, String speciality, Double salary, String certificationNumber,
@@ -42,8 +42,8 @@ public interface TrainerService {
     /**
      * Updates an existing trainer's information.
      *
-     * @param trainerId
-     * @param trainerRequest
+     * @param trainerId the id of the trainer
+     * @param trainerRequest the new data for the trainer
      * @return the updated Trainer
      */
     Trainer updateTrainer(String trainerId, TrainerRequest trainerRequest);
@@ -54,5 +54,5 @@ public interface TrainerService {
      * @param trainerID of the trainer to delete
      *
      */
-    void deleteByTrainerId(String trainerID)
+    void deleteByTrainerId(String trainerID);
 }

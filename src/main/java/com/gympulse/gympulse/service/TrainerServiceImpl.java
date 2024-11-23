@@ -3,6 +3,7 @@ package com.gympulse.gympulse.service;
 import com.gympulse.gympulse.model.person.Trainer;
 import com.gympulse.gympulse.repositories.TrainerRepository;
 import com.gympulse.gympulse.utils.GymLogger;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
