@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Optional;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 public class TrainerServiceImpl implements TrainerService{
 
@@ -63,5 +65,18 @@ public class TrainerServiceImpl implements TrainerService{
         } else {
             throw new NoSuchElementException("Trainer not found for ID: " + trainerId);
         }
+    }
+
+    private String generateNextTrainerId() {
+        List<Trainer> trainers = allTrainers();
+        Set<String> usedIds = trainers.stream().map(Trainer::getTrainerId).collect(Collectors.toSet());
+
+        for (int i = 1; i <= 9999; i++) {
+            String candidateId = String.format("%04d", i);
+            if (!usedIds.contains(candidateId)) {
+                return candidateId;
+            }
+        }
+        return null;
     }
 }
