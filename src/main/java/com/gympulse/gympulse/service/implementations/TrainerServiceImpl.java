@@ -40,16 +40,19 @@ public class TrainerServiceImpl implements TrainerService {
 
     @Override
     public List<Trainer> allTrainers(){
+        // Retrieve all trainers from the repository
         return trainerRepository.findAll();
     }
 
     @Override
     public Optional<Trainer> trainerById(String trainerId) {
+        // Find a trainer by their ID
         return trainerRepository.findByTrainerId(trainerId);
     }
 
     @Override
     public Trainer updateTrainer(String trainerId, TrainerRequest trainerRequest) {
+        // Update an existing trainer's details
         Optional<Trainer> optionalTrainer =trainerRepository.findByTrainerId(trainerId);
         if (optionalTrainer.isPresent()) {
             Trainer trainer = optionalTrainer.get();
@@ -69,6 +72,7 @@ public class TrainerServiceImpl implements TrainerService {
 
     @Override
     public void deleteByTrainerId(String trainerId) {
+        // Delete trainer by their ID
         Optional<Trainer> trainer = trainerRepository.findByTrainerId(trainerId);
         if (trainer.isPresent()) {
             logger.log("Trainer deleted, ID: " + trainerId);

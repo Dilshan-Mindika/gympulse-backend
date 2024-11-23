@@ -7,6 +7,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
+// Repository interface for managing trainer entities in MongoDB
 @Repository
 public interface TrainerRepository extends MongoRepository<Trainer, ObjectId> {
     Optional<Trainer> findByTrainerId(String trainerId);

@@ -2,6 +2,7 @@ package com.gympulse.gympulse.requests;
 
 import lombok.Data;
 
+// Request object for creating or updating a Trainer
 @Data
 public class TrainerRequest {
     private String fullName;

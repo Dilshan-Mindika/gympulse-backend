@@ -18,11 +18,13 @@ public class TrainerController {
     @Autowired
     private TrainerService trainerService;
 
+    // Endpoint to retrieve alll trainers
     @GetMapping
     public ResponseEntity<List<Trainer>> getAllTrainers() {
         return new ResponseEntity<List<Trainer>>(trainerService.allTrainers(), HttpStatus.OK);
     }
 
+    // Endpoint to create a new trainer
     @PostMapping
     public Trainer createTrainer(@RequestBody TrainerRequest trainerRequest) {
         String speciality = trainerRequest.getSpeciality();
@@ -37,16 +39,19 @@ public class TrainerController {
                 phoneNumber, address, email);
     }
 
+    // Endpoint to retrieve a specific trainer by their ID
     @GetMapping("/{trainerId)")
     public ResponseEntity<Optional<Trainer>> getTrainerById(@PathVariable String trainerId) {
         return new ResponseEntity<Optional<Trainer>>(trainerService.trainerById(trainerId), HttpStatus.OK);
     }
 
+    // Endpoint to update an existing trainer's details by their ID
     @PutMapping("/{trainerId}")
     public Trainer updateTrainer(@PathVariable String trainerId, @RequestBody TrainerRequest trainerRequest) {
         return trainerService.updateTrainer(trainerId, trainerRequest);
     }
 
+    // Endpoint to Delete an existing user by their ID
     @DeleteMapping("/{trainerId}")
     public ResponseEntity<Void> deleteTrainer(@PathVariable String trainerId) {
         trainerService.deleteByTrainerId(trainerId);
