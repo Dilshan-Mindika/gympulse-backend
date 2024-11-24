@@ -49,4 +49,10 @@ public class EquipmentController {
         equipmentService.deleteEquipment(_id);
     }
 
+    @RequestMapping("/search/{id}")
+    private  Equipment getEquipments(@PathVariable(name="id")String equipmentid)
+    {
+        return equipmentService.getEquipmentByID(equipmentid);
+    }
+
 }
