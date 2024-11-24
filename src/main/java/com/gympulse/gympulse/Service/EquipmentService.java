@@ -21,4 +21,9 @@ public class EquipmentService {
 
         return this.repo.findAll();
     }
+
+    public void deleteEquipment(String id) {
+        repo.deleteById(id);
+
+    }
 }
