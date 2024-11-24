@@ -47,4 +47,12 @@ public class MemberCotroller {
     }
 
 
+    //endpoint to delete a member by their ID
+    @DeleteMapping("/{memberId}")
+    public ResponseEntity<void> deleteMember(@PathVariable String memberId) {
+        memberServices.deleteByMemberId(memberId); //Delete the member
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT); //return no content response
+    }
+
+
 }
