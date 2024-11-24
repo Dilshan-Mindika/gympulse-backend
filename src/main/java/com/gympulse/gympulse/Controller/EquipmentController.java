@@ -2,6 +2,7 @@ package com.gympulse.gympulse.Controller;
 
 
 import com.gympulse.gympulse.Entity.Equipment;
+import com.gympulse.gympulse.Service.EquipmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,6 +12,9 @@ import org.springframework.web.bind.annotation.*;
 
 
 public class EquipmentController {
+    @Autowired
+    private EquipmentService equipmentService;
+
 
 
 
