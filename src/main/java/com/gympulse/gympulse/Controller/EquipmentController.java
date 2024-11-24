@@ -31,4 +31,14 @@ public class EquipmentController {
 
         return equipmentService.listAll();
     }
+    @PutMapping (value = "/edit/{id}")
+    private Equipment update(@RequestBody Equipment equipment,@PathVariable(name="id")String _id)
+
+    {
+
+        equipment.set_id(_id);
+        equipmentService.saveorUpdate(equipment);
+        return equipment;
+    }
+
 }
