@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @CrossOrigin(origins ="*")
-@RequestMapping("api/v1/equipment")?
+@RequestMapping("api/v1/equipment")
 
 
 public class EquipmentController {
