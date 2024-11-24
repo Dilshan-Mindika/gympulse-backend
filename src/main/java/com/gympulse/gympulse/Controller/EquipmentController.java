@@ -41,4 +41,12 @@ public class EquipmentController {
         return equipment;
     }
 
+    @DeleteMapping("/delete/{id}")
+
+    private void deleteEquipment(@PathVariable("id") String _id)
+
+    {
+        equipmentService.deleteEquipment(_id);
+    }
+
 }
