@@ -1,7 +1,11 @@
 package com.gympulse.gympulse.model.person;
 
+import lombok.Data;
+import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.DocumentReference;
 
+@Data
+@Document (collection = "" )
 public class Member {
     private String memberId; // unique identifier for the member
     private String memberShipType; // type of membership(standard,premium)
@@ -22,7 +26,7 @@ public class Member {
     // Constructor for creating a trainer without specifying trainer ID (useful for new trainers)
     public Member(String fullName, String email, String address, String phoneNumber, String memberId,
                 String membershipType, String startString, String endString) {
-            super(fullName, email, address, PhoneNumber);
+            super(fullName, email, address, phoneNumber);
             this.memberId = memberId; //initialize member-specific fields
             this.memberShipType = membershipType;
             this.startDate = startString;
