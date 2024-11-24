@@ -24,4 +24,11 @@ public class EquipmentController {
         equipmentService.saveorUpdate(equipments);
         return equipments.get_id();
     }
+
+    @GetMapping (value = "/getAll")
+    private Iterable<Equipment>getEquipments()
+    {
+
+        return equipmentService.listAll();
+    }
 }

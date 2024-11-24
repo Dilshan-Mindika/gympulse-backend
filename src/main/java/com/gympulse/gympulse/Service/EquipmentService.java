@@ -16,4 +16,9 @@ public class EquipmentService {
 
         repo.save(equipments);
     }
+
+    public Iterable<Equipment> listAll() {
+
+        return this.repo.findAll();
+    }
 }
