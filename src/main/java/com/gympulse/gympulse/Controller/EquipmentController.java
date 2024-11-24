@@ -1,6 +1,7 @@
 package com.gympulse.gympulse.Controller;
 
 
+import com.gympulse.gympulse.Entity.Equipment;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
