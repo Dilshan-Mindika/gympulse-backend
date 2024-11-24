@@ -26,4 +26,10 @@ public class EquipmentService {
         repo.deleteById(id);
 
     }
+
+    public Equipment getEquipmentByID(String equipmentid) {
+        return repo.findById(equipmentid).get();
+
+
+    }
 }
