@@ -1,9 +1,8 @@
 package com.gympulse.gympulse.Controller;
 
 
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @CrossOrigin(origins ="*")
@@ -11,4 +10,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 public class EquipmentController {
+
+
+
+    @PostMapping(value = "/save")
+    private String saveEquipment(@RequestBody Equipment equipments)
+    {
+        equipmentService.saveorUpdate(equipments);
+        return equipments.get_id();
+    }
 }
