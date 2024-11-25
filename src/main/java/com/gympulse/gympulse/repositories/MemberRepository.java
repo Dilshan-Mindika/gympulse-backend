@@ -1,4 +1,4 @@
-package com.nexus.GYMPULSE.repositories;
+package com.gympulse.gympulse.repositories;
 
 import java.util.Optional;
 
@@ -6,7 +6,7 @@ import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
-import com.nexus.GYMPULSE.model.person.Member;
+import com.gympulse.gympulse.model.person.Member;
 
 // Repository interface for managing Member entities in MongoDB
 @Repository
