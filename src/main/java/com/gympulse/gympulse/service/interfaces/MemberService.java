@@ -1,11 +1,11 @@
-package com.nexus.GYMPULSE.service.interfaces;
+package com.gympulse.gympulse.service.interfaces;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.nexus.GYMPULSE.model.person.Member;
-import com.nexus.GYMPULSE.model.workoutplan.WorkoutPlan;
-import com.nexus.GYMPULSE.requests.MemberRequest;
+import com.gympulse.gympulse.model.person.Member;
+import com.gympulse.gympulse.model.workoutplan.WorkoutPlan;
+import com.gympulse.gympulse.requests.MemberRequest;
 
 /**
  * Service interface for managing members.
