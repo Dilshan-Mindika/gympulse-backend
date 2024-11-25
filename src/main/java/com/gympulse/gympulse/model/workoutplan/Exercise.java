@@ -1,4 +1,4 @@
-package com.nexus.GYMPULSE.model.workoutplan;
+package com.gympulse.gympulse.model.workoutplan;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
