@@ -1,6 +1,6 @@
-package com.nexus.GYMPULSE.repositories;
+package com.gympulse.gympulse.repositories;
 
-import com.nexus.GYMPULSE.model.feedback.Feedback;
+import com.gympulse.gympulse.model.feedback.Feedback;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.List;
