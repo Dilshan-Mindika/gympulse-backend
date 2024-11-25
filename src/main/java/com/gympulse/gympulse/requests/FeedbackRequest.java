@@ -1,4 +1,4 @@
-package com.nexus.GYMPULSE.requests;
+package com.gympulse.gympulse.requests;
 
 public class FeedbackRequest {
     private String memberId; // ID of the member giving feedback
