@@ -1,8 +1,8 @@
-package com.nexus.GYMPULSE.service.implementations;
+package com.gympulse.gympulse.service.implementations;
 
-import com.nexus.GYMPULSE.model.equipment.Equipment;
-import com.nexus.GYMPULSE.repositories.EquipmentRepository;
-import com.nexus.GYMPULSE.service.interfaces.EquipmentService;
+import com.gympulse.gympulse.model.equipment.Equipment;
+import com.gympulse.gympulse.repositories.EquipmentRepository;
+import com.gympulse.gympulse.service.interfaces.EquipmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
