@@ -1,4 +1,4 @@
-package com.nexus.GYMPULSE.model.workoutplan;
+package com.gympulse.gympulse.model.workoutplan;
 
 import java.util.List;
 
