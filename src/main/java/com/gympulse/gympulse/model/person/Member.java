@@ -1,10 +1,10 @@
-package com.nexus.GYMPULSE.model.person;
+package com.gympulse.gympulse.model.person;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.DocumentReference;
 
-import com.nexus.GYMPULSE.model.workoutplan.WorkoutPlan;
+import com.gympulse.gympulse.model.workoutplan.WorkoutPlan;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
