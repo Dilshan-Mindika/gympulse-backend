@@ -1,6 +1,6 @@
-package com.nexus.GYMPULSE.requests;
+package com.gympulse.gympulse.requests;
 
-import com.nexus.GYMPULSE.model.workoutplan.WorkoutPlan;
+import com.gympulse.gympulse.model.workoutplan.WorkoutPlan;
 import lombok.Data;
 
 // Request object for creating or updating a Member
