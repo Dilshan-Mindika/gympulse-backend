@@ -1,11 +1,11 @@
-package com.nexus.GYMPULSE.model.workoutplan.strategies;
+package com.gympulse.gympulse.model.workoutplan.strategies;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.ArrayList;
 
-import com.nexus.GYMPULSE.model.workoutplan.DailyWorkout;
-import com.nexus.GYMPULSE.model.workoutplan.Exercise;
+import com.gympulse.gympulse.model.workoutplan.DailyWorkout;
+import com.gympulse.gympulse.model.workoutplan.Exercise;
 
 // Implementation of the WorkoutStrategy interface for a strength training workout routine
 public class StrengthTrainingStrategy implements WorkoutStrategy {
