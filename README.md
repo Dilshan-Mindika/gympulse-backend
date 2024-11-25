@@ -115,14 +115,12 @@ The application exposes REST APIs for managing members, trainers, workout plans,
 
 - **Microservices**: The system can be extended in the future to a microservice-based architecture.
 - **MongoDB** is used as the database due to its flexibility and ease of scaling.
-- **JWT Authentication**: Used for securing the endpoints.
 
 ## Quality Attributes
 
 1. **Performance**: The system is designed to handle large volumes of data due to its use of MongoDB, which scales horizontally.
-2. **Security**: JWT-based authentication ensures secure access to different parts of the system.
-3. **Maintainability**: Use of design patterns such as Factory Method, Singleton, and Strategy promotes code maintainability and extensibility.
-4. **Scalability**: The application is designed to scale horizontally, especially due to MongoDB's NoSQL nature.
+2. **Maintainability**: Use of design patterns such as Factory Method, Singleton, and Strategy promotes code maintainability and extensibility.
+3. **Scalability**: The application is designed to scale horizontally, especially due to MongoDB's NoSQL nature.
 
 
 ## Conclusion
