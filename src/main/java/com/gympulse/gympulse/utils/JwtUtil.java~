@@ -1,0 +1,4 @@
+package com.nexus.GYMPULSE.utils;
+
+public class JwtUtil {
+}
