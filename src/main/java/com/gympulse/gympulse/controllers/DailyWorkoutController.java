@@ -1,4 +1,4 @@
-package com.nexus.GYMPULSE.controllers;
+package com.gympulse.gympulse.controllers;
 
 import java.util.List;
 import java.util.Optional;
@@ -8,10 +8,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import com.nexus.GYMPULSE.model.workoutplan.DailyWorkout;
-import com.nexus.GYMPULSE.model.workoutplan.Exercise;
-import com.nexus.GYMPULSE.requests.DailyWorkoutRequest;
-import com.nexus.GYMPULSE.service.interfaces.DailyWorkoutService;
+import com.gympulse.gympulse.model.workoutplan.DailyWorkout;
+import com.gympulse.gympulse.model.workoutplan.Exercise;
+import com.gympulse.gympulse.requests.DailyWorkoutRequest;
+import com.gympulse.gympulse.service.interfaces.DailyWorkoutService;
 
 @CrossOrigin(origins = "http://localhost:5173")
 @RestController
