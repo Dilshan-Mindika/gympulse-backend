@@ -1,4 +1,4 @@
-package com.nexus.GYMPULSE.config;
+package com.gympulse.gympulse.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
