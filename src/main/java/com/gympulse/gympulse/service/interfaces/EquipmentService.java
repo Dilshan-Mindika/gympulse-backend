@@ -1,6 +1,6 @@
-package com.nexus.GYMPULSE.service.interfaces;
+package com.gympulse.gympulse.service.interfaces;
 
-import com.nexus.GYMPULSE.model.equipment.Equipment;
+import com.gympulse.gympulse.model.equipment.Equipment;
 
 import java.util.List;
 import java.util.Optional;
