@@ -1,4 +1,4 @@
-package com.nexus.GYMPULSE.requests;
+package com.gympulse.gympulse.requests;
 
 import lombok.Data;
 
