@@ -1,4 +1,4 @@
-package com.nexus.GYMPULSE.model.person;
+package com.gympulse.gympulse.model.person;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
