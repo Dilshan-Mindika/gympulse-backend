@@ -1,4 +1,4 @@
-package com.nexus.GYMPULSE.utils;
+package com.gympulse.gympulse.utils;
 
 import java.io.FileWriter;
 import java.io.IOException;
