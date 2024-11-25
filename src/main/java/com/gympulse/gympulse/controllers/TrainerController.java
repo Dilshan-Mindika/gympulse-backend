@@ -1,4 +1,4 @@
-package com.nexus.GYMPULSE.controllers;
+package com.gympulse.gympulse.controllers;
 
 import java.util.List;
 import java.util.Optional;
@@ -8,9 +8,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import com.nexus.GYMPULSE.model.person.Trainer;
-import com.nexus.GYMPULSE.requests.TrainerRequest;
-import com.nexus.GYMPULSE.service.interfaces.TrainerService;
+import com.gympulse.gympulse.model.person.Trainer;
+import com.gympulse.gympulse.requests.TrainerRequest;
+import com.gympulse.gympulse.service.interfaces.TrainerService;
 
 @CrossOrigin(origins = "http://localhost:5173")
 @RestController
