@@ -1,9 +1,9 @@
-package com.nexus.GYMPULSE.service.implementations;
+package com.gympulse.gympulse.service.implementations;
 
-import com.nexus.GYMPULSE.model.feedback.Feedback;
-import com.nexus.GYMPULSE.repositories.FeedbackRepository;
-import com.nexus.GYMPULSE.requests.FeedbackRequest;
-import com.nexus.GYMPULSE.service.interfaces.FeedbackService;
+import com.gympulse.gympulse.model.feedback.Feedback;
+import com.gympulse.gympulse.repositories.FeedbackRepository;
+import com.gympulse.gympulse.requests.FeedbackRequest;
+import com.gympulse.gympulse.service.interfaces.FeedbackService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
