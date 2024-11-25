@@ -1,4 +1,4 @@
-package com.nexus.GYMPULSE.service.implementations;
+package com.gympulse.gympulse.service.implementations;
 
 import java.util.List;
 import java.util.NoSuchElementException;
@@ -9,12 +9,12 @@ import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.nexus.GYMPULSE.model.person.Member;
-import com.nexus.GYMPULSE.model.workoutplan.WorkoutPlan;
-import com.nexus.GYMPULSE.repositories.MemberRepository;
-import com.nexus.GYMPULSE.requests.MemberRequest;
-import com.nexus.GYMPULSE.service.interfaces.MemberService;
-import com.nexus.GYMPULSE.utils.GymLogger;
+import com.gympulse.gympulse.model.person.Member;
+import com.gympulse.gympulse.model.workoutplan.WorkoutPlan;
+import com.gympulse.gympulse.repositories.MemberRepository;
+import com.gympulse.gympulse.requests.MemberRequest;
+import com.gympulse.gympulse.service.interfaces.MemberService;
+import com.gympulse.gympulse.utils.GymLogger;
 
 @Service
 public class MemberServiceImpl implements MemberService {
