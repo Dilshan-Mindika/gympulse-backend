@@ -1,11 +1,11 @@
-package com.nexus.GYMPULSE.repositories;
+package com.gympulse.gympulse.repositories;
 
 import java.util.Optional;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
-import com.nexus.GYMPULSE.model.workoutplan.WorkoutPlan;
+import com.gympulse.gympulse.model.workoutplan.WorkoutPlan;
 
 // Repository interface for managing WorkoutPlan entities in MongoDB
 @Repository
