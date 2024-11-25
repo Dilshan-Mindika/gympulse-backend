@@ -1,7 +1,7 @@
-package com.nexus.GYMPULSE.service.interfaces;
+package com.gympulse.gympulse.service.interfaces;
 
-import com.nexus.GYMPULSE.model.feedback.Feedback;
-import com.nexus.GYMPULSE.requests.FeedbackRequest;
+import com.gympulse.gympulse.model.feedback.Feedback;
+import com.gympulse.gympulse.requests.FeedbackRequest;
 
 import java.util.List;
 import java.util.Optional;
