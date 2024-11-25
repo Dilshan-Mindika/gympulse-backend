@@ -1,7 +1,7 @@
-package com.nexus.GYMPULSE.model.workoutplan.strategies;
+package com.gympulse.gympulse.model.workoutplan.strategies;
 
 import java.util.List;
-import com.nexus.GYMPULSE.model.workoutplan.DailyWorkout;
+import com.gympulse.gympulse.model.workoutplan.DailyWorkout;
 
 // Interface representing a strategy for generating workout routines
 public interface WorkoutStrategy {
