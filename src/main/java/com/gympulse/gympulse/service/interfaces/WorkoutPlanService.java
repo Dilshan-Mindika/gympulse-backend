@@ -1,12 +1,12 @@
-package com.nexus.GYMPULSE.service.interfaces;
+package com.gympulse.gympulse.service.interfaces;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.nexus.GYMPULSE.model.workoutplan.DailyWorkout;
-import com.nexus.GYMPULSE.model.workoutplan.WorkoutPlan;
-import com.nexus.GYMPULSE.requests.WorkoutPlanRequest;
-import com.nexus.GYMPULSE.model.workoutplan.strategies.WorkoutStrategy;
+import com.gympulse.gympulse.model.workoutplan.DailyWorkout;
+import com.gympulse.gympulse.model.workoutplan.WorkoutPlan;
+import com.gympulse.gympulse.requests.WorkoutPlanRequest;
+import com.gympulse.gympulse.model.workoutplan.strategies.WorkoutStrategy;
 
 /**
  * Service interface for managing workout plans.
