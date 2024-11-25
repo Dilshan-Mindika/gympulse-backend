@@ -1,7 +1,7 @@
-package com.nexus.GYMPULSE.controllers;
+package com.gympulse.gympulse.controllers;
 
-import com.nexus.GYMPULSE.model.equipment.Equipment;
-import com.nexus.GYMPULSE.service.interfaces.EquipmentService;
+import com.gympulse.gympulse.model.equipment.Equipment;
+import com.gympulse.gympulse.service.interfaces.EquipmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
