@@ -1,7 +1,7 @@
-package com.nexus.GYMPULSE.service.interfaces;
+package com.gympulse.gympulse.service.interfaces;
 
-import com.nexus.GYMPULSE.model.attendance.Attendance;
-import com.nexus.GYMPULSE.requests.AttendanceRequest;
+import com.gympulse.gympulse.model.attendance.Attendance;
+import com.gympulse.gympulse.requests.AttendanceRequest;
 
 import java.util.List;
 import java.util.Optional;
