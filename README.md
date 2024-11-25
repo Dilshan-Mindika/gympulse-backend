@@ -13,7 +13,6 @@ GYMPULSE is a comprehensive gym management system designed using **Spring Boot**
 
 - **Backend**: Java 21, Spring Boot 3.x
 - **Database**: MongoDB (NoSQL)
-- **Authentication**: JWT (JSON Web Token)
 - **Design Patterns**: Singleton, Factory Method, Strategy, Template Method, Observer (Potential)
 
 ## Functional Requirements
@@ -37,7 +36,6 @@ GYMPULSE is a comprehensive gym management system designed using **Spring Boot**
 
 1. **Scalability**: The system should be able to handle multiple members, trainers, and workout plans concurrently.
 2. **Reliability**: Ensure that the application is reliable and provides consistent performance even under high loads.
-3. **Security**: Implement secure access control for different types of users (members, trainers, and admins) using JWT for authentication.
 
 ## Setup Instructions
 
