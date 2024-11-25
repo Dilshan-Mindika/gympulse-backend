@@ -1,8 +1,8 @@
-package com.nexus.GYMPULSE.controllers;
+package com.gympulse.gympulse.controllers;
 
-import com.nexus.GYMPULSE.model.feedback.Feedback;
-import com.nexus.GYMPULSE.requests.FeedbackRequest;
-import com.nexus.GYMPULSE.service.interfaces.FeedbackService;
+import com.gympulse.gympulse.model.feedback.Feedback;
+import com.gympulse.gympulse.requests.FeedbackRequest;
+import com.gympulse.gympulse.service.interfaces.FeedbackService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
