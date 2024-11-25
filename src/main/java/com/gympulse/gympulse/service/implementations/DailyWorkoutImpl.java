@@ -1,4 +1,4 @@
-package com.nexus.GYMPULSE.service.implementations;
+package com.gympulse.gympulse.service.implementations;
 
 import java.util.List;
 import java.util.NoSuchElementException;
@@ -7,12 +7,12 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.nexus.GYMPULSE.model.workoutplan.DailyWorkout;
-import com.nexus.GYMPULSE.model.workoutplan.Exercise;
-import com.nexus.GYMPULSE.repositories.DailyWorkoutRepository;
-import com.nexus.GYMPULSE.requests.DailyWorkoutRequest;
-import com.nexus.GYMPULSE.service.interfaces.DailyWorkoutService;
-import com.nexus.GYMPULSE.utils.GymLogger;
+import com.gympulse.gympulse.model.workoutplan.DailyWorkout;
+import com.gympulse.gympulse.model.workoutplan.Exercise;
+import com.gympulse.gympulse.repositories.DailyWorkoutRepository;
+import com.gympulse.gympulse.requests.DailyWorkoutRequest;
+import com.gympulse.gympulse.service.interfaces.DailyWorkoutService;
+import com.gympulse.gympulse.utils.GymLogger;
 
 @Service
 public class DailyWorkoutImpl implements DailyWorkoutService {
