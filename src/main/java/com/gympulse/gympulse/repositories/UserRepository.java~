@@ -1,0 +1,4 @@
+package com.nexus.GYMPULSE.repositories;
+
+public interface UserRepository {
+}
