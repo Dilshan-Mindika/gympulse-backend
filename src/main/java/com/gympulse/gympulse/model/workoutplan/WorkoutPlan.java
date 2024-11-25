@@ -1,4 +1,4 @@
-package com.nexus.GYMPULSE.model.workoutplan;
+package com.gympulse.gympulse.model.workoutplan;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.DocumentReference;
 
-import com.nexus.GYMPULSE.model.workoutplan.strategies.WorkoutStrategy;
+import com.gympulse.gympulse.model.workoutplan.strategies.WorkoutStrategy;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
