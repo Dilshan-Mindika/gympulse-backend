@@ -1,8 +1,8 @@
-package com.nexus.GYMPULSE.requests;
+package com.gympulse.gympulse.requests;
 
 import java.util.List;
 
-import com.nexus.GYMPULSE.model.workoutplan.DailyWorkout;
+import com.gympulse.gympulse.model.workoutplan.DailyWorkout;
 
 import lombok.Data;
 
