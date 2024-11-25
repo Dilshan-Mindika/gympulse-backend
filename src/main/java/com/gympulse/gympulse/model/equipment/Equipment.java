@@ -1,4 +1,4 @@
-package com.nexus.GYMPULSE.model.equipment;
+package com.gympulse.gympulse.model.equipment;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;
