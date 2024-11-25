@@ -1,6 +1,6 @@
-package com.nexus.GYMPULSE.repositories;
+package com.gympulse.gympulse.repositories;
 
-import com.nexus.GYMPULSE.model.equipment.Equipment;
+import com.gympulse.gympulse.model.equipment.Equipment;
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
