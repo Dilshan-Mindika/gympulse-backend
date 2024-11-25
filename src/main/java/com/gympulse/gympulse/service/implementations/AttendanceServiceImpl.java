@@ -1,9 +1,9 @@
-package com.nexus.GYMPULSE.service.implementations;
+package com.gympulse.gympulse.service.implementations;
 
-import com.nexus.GYMPULSE.model.attendance.Attendance;
-import com.nexus.GYMPULSE.repositories.AttendanceRepository;
-import com.nexus.GYMPULSE.requests.AttendanceRequest;
-import com.nexus.GYMPULSE.service.interfaces.AttendanceService;
+import com.gympulse.gympulse.model.attendance.Attendance;
+import com.gympulse.gympulse.repositories.AttendanceRepository;
+import com.gympulse.gympulse.requests.AttendanceRequest;
+import com.gympulse.gympulse.service.interfaces.AttendanceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
